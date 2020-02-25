@@ -1,0 +1,6 @@
+file '../files/cortados/1.mp4'
+file '../files/cortados/3.mp4'
+file '../files/cortados/2.mp4'
+file '../files/cortados/0.mp4'
+file '../files/cortados/4.mp4'
+file '../files/cortados/5.mp4'
