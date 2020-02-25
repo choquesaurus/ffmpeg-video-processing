@@ -54,15 +54,16 @@ const transporter= mailer.createTransport({
            <span>Cualquier consulta : daniechoque159@gmail.com<span/><br/>
            <span>Repositorio del ejemplo : <span/><a href='https://github.com/WasauskyOK/ffmpeg-video-processing'>Ir al repositorio :D</a><br/><br/>
            <h4>Adios :D<h4/>
-            `,
-            attachments:[{
-                filename:"videasoxd.mp4",
-                path:pathVideo
-              },
-              {
-                filename:"imagenminiatura.png",
-                path:pathThumbnail
-              }]
+            `
+            // ,
+            // attachments:[{
+            //     filename:"videasoxd.mp4",
+            //     path:pathVideo
+            //   },
+            //   {
+            //     filename:"imagenminiatura.png",
+            //     path:pathThumbnail
+            //   }]
         },(err,info)=>{
             if(err)console.log(err)
             console.log('Enviado :D');     
