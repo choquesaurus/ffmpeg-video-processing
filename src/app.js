@@ -14,12 +14,14 @@ const urls=
 'https://www.youtube.com/watch?v=nQ7mhC5_Rys',
 'https://www.youtube.com/watch?v=QH2-TGUlwu4',
 'https://www.youtube.com/watch?v=VRUjdlCynU0',
-'https://www.youtube.com/watch?v=7q1HnqDB0nM'
+'https://www.youtube.com/watch?v=7q1HnqDB0nM',
+"https://www.youtube.com/watch?v=dFRywBkXgdA"
 ]
 
 async function initProcess(params,emails){
     try {
     const urlsdescargar=await Descargar(params);
+    
     const urlscortados=await Cortar(urlsdescargar);
     const urlsunido= await Unir(urlscortados);
     const urlsminiatura=await Thumbnail(urlsunido);
@@ -27,6 +29,7 @@ async function initProcess(params,emails){
     const sendmails=await SendMails(urlsuploads3,emails);
     
     console.log(sendmails);
+    
     } catch (error) {
         console.log(error)
     }

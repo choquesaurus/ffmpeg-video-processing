@@ -8,7 +8,9 @@ Agrega un archivo .env y configura tus variables de entorno
     secretAccessKey=************** Ingresa tu credencial aws
     
     Bucket=***************Ingresa  el nombre de un bucket aws s3 
-    
+
+    region=*************** Ingresa la region donde configuraste tu bucket
+
     user=Ingresa un  correo por ejemplo (example@gmail.com) para enviar el video , miniatura y mensaje a la lista de correo de configuraste
     
     pass=Ingresa la password de ese correo

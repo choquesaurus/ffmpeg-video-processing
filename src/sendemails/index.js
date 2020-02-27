@@ -3,7 +3,7 @@ import mailer from 'nodemailer';
 const {user,pass}=process.env;
 function SendMails(){
 const [urlsFilesS3,sendmailers]=[...arguments];
-const [pathVideo,pathThumbnail]=urlsFilesS3;
+const [pathThumbnail,pathVideo]=urlsFilesS3;
 
 console.log('Enviando archivos y mensaje a estos correos : ',sendmailers)
 console.log('Enviando Video y miniatura a los correos seleccionados :D ');
@@ -45,7 +45,7 @@ const transporter= mailer.createTransport({
             <span>
             video   <br/>
             src='${pathVideo}'<br/>
-            poster='${pathVideo}'<br/>
+            poster='${pathThumbnail}'<br/>
             controls 
             </span>  
             
